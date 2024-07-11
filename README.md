@@ -13,8 +13,6 @@ Je nach Wissenstand des Entwicklers, Budget des Projektes oder dessen Anforderun
 - Datenbank füllen
 - Namespace berücksichtigen - wie?
 - bei FOR veröffentlichen? Ist das sinnvoll?
-- Changelog noch richtig verlinken
-- Lizenz hinzufügen?
 - Kategorien und Subkategorien überdenken
 
 
@@ -30,10 +28,11 @@ Je nach Wissenstand des Entwicklers, Budget des Projektes oder dessen Anforderun
 
 ## Changelog
 
-siehe [CHANGELOG.md](https://github.com/tbaddade/redaxo_sprog/blob/master/CHANGELOG.md)
+siehe [CHANGELOG.md](https://github.com/olien/base_quality_check/blob/main/CHANGELOG.md)
 
 ## Lizenz
 
+[MIT](https://github.com/olien/base_quality_check/blob/main/LICENSE)
 
 ## Autor
 

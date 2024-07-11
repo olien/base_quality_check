@@ -5,7 +5,8 @@ compile: true
 page:
   title: Base Quality Check
   icon: rex-icon fa-check check
-  perm: admin  
+  perm: admin
+  live_mode: false
   block: base_addon  
   subpages:
     frontend:   

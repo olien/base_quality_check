@@ -44,3 +44,20 @@ siehe [CHANGELOG.md](https://github.com/olien/base_quality_check/blob/main/CHANG
 
 - [Friends Of REDAXO](https://github.com/FriendsOfREDAXO)
 - [REDAXO CMS](https://redaxo.org)
+
+
+
+---
+
+## Angucken und ggf. sinnvoll einbauen :-)
+
+- https://www.webaccessibilitychecklist.com/
+- https://observatory.mozilla.org
+- https://validator.w3.org
+- https://www.seobility.net/de/
+- https://pagespeed.web.dev
+- https://www.a11yproject.com/checklist/
+- https://www.cookiemetrix.com
+- https://web.dev/?hl=de
+- https://github.com/ozf/frontend-guidelines
+- https://github.com/thedaviddias/Front-End-Performance-Checklist

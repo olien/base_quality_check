@@ -298,7 +298,7 @@
         "table": {
             "status": 1,
             "table_name": "rex_base_quality_check_sub_group",
-            "name": "Base Quality Check - Unteregruppen",
+            "name": "Base Quality Check - Untergruppen",
             "description": "",
             "list_amount": 50,
             "list_sortfield": "prio",

@@ -1,7 +1,8 @@
 package: base_quality_check
 version: 1.0.0
 author: 'Oliver Kreischer | getaweb GmbH'
-compile: true
+supportpage: https://github.com/olien/base_quality_check
+compile: false
 page:
   title: Base Quality Check
   icon: rex-icon fa-check check

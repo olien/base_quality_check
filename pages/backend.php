@@ -6,12 +6,12 @@ $group = 2;
 
 $currentSubGroup = '';
 
+
 $all_tasks = base_quality_check::query()
     ->where('status', 1, "=")
     ->where('group', $group, "=")
-    ->orderBy('subgroup')
-    ->orderBy('prio');
-
+    ->orderBy('prio', 'ASC');
+    
 if ($all_tasks) {
     foreach ($all_tasks as $task) {
         if ($currentSubGroup != $task->getSubgroup()->subgroup) {

@@ -106,4 +106,11 @@ class base_quality_check extends rex_yform_manager_dataset {
         return $this;
     }
 
+    // Beispiel einer getPrio Methode
+    public function getPrio() {
+        // Angenommen, es gibt eine Eigenschaft $prio, die die Priorität speichert
+        return $this->prio;
+    }
+
+
 }?>

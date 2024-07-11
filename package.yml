@@ -1,0 +1,31 @@
+package: base_quality_check
+version: 1.0.0
+author: 'Oliver Kreischer | getaweb GmbH'
+compile: true
+page:
+  title: Base Quality Check
+  icon: rex-icon fa-check check
+  perm: admin  
+  block: base_addon  
+  subpages:
+    frontend:   
+      title: Frontend <div id="frontendcount"></div>
+    backend:   
+      title: Backend <div id="backendcount"></div>   
+    live:   
+      title: Live <div id="livecount"></div>            
+    readme:
+        title: Info
+        subPath: README.md
+        itemclass: pull-right
+
+requires:
+  redaxo: '^5.15'
+  yform: '^4.2.1'
+
+installer_ignore:
+    - .git
+    - preview
+    - .github
+    - .gitignore
+    - .gitattributes

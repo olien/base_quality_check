@@ -34,6 +34,13 @@ rex_extension::register('PACKAGES_INCLUDED', function () {
 
 rex_view::addCssFile($this->getAssetsUrl('bqc.css'));
 
+    rex_extension::register('OUTPUT_FILTER',function(rex_extension_point $ep){
+        $suchmuster = '<h4 class="rex-nav-main-title">[translate:navigation_base_addon]</h4>';
+        $ersetzen = '<div class="rex-nav-main-title" style="padding:0px; margin-bottom: 14px;"></div>';
+        $ep->setSubject(str_replace($suchmuster, $ersetzen, $ep->getSubject()));
+    });
+
+
 if (isset($_GET['page']) && is_string($_GET['page']) && preg_match('/base_quality_check/', $_GET['page'])) {
 	
 	rex_view::addJsFile($this->getAssetsUrl('bqc.js'));

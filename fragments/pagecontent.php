@@ -75,7 +75,7 @@ if ($all_tasks) {
             if ($task->getSource()) {
                 $tasks[] = '
                     <h6 style="margin-top: 30px;opacity:50%;"><b>Code</b></h6>
-                    <pre><code >'.rex_string::highlight($task->getSource()).'</code></pre>';
+                    '.rex_string::highlight($task->getSource());
             }
             if ($task->getLinks()) {
                 $tasks[] = '

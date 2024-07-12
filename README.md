@@ -4,7 +4,9 @@ Diese AddsOn soll dabei helfen ein paar Dinge bei der Entwicklung oder der Onlin
 Je nach Wissenstand des Entwicklers, Budget des Projektes oder dessen Anforderungen ist es sicherlich nicht immer möglich oder notwendig unbedingt in allen Bereichen die 100% zu erreichen :-) 
 
 
+**Anleitung**
 
+Einfach möglichst alle Statusicons anklicken und alles grün werden lassen :-))
 
 
 ## Autor, Lizenz und Changelog

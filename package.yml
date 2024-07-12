@@ -1,5 +1,5 @@
 package: base_quality_check
-version: 1.1.0
+version: 1.2.0
 author: 'Oliver Kreischer | getaweb GmbH'
 supportpage: https://github.com/olien/base_quality_check
 compile: false

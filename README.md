@@ -4,41 +4,14 @@ Diese AddsOn soll dabei helfen ein paar Dinge bei der Entwicklung oder der Onlin
 Je nach Wissenstand des Entwicklers, Budget des Projektes oder dessen Anforderungen ist es sicherlich nicht immer möglich oder notwendig unbedingt in allen Bereichen die 100% zu erreichen :-) 
 
 
----
 
 
 
-## ToDo
+## Autor, Lizenz und Changelog
 
-- Datenbank füllen
-- Namespace berücksichtigen - wie?
-- bei FOR veröffentlichen? Ist das sinnvoll?
-- Kategorien und Subkategorien überdenken
-
-
----
-
-
-
-## Quellen
-
-- https://github.com/xFuture603/Front-End-Checklist 
-
-
-
-## Changelog
-
-siehe [CHANGELOG.md](https://github.com/olien/base_quality_check/blob/main/CHANGELOG.md)
-
-## Lizenz
-
-[MIT](https://github.com/olien/base_quality_check/blob/main/LICENSE)
-
-## Autor
-
-- [Oliver Kreischer](https://github.com/olien)
-- [getaweb GmbH](https://github.com/getaweb) 
-
+- Autor: [Oliver Kreischer](https://github.com/olien), [getaweb GmbH](https://github.com/getaweb) 
+- Lizenz: [MIT](https://github.com/olien/base_quality_check/blob/main/LICENSE) 
+- Changelog: [CHANGELOG.md](https://github.com/olien/base_quality_check/blob/main/CHANGELOG.md)
 
 ## Credits
 
@@ -46,11 +19,13 @@ siehe [CHANGELOG.md](https://github.com/olien/base_quality_check/blob/main/CHANG
 - [REDAXO CMS](https://redaxo.org)
 
 
+## Quellen und weitere hilfreiche Links
 
----
 
-## Angucken und ggf. sinnvoll einbauen :-)
-
+- https://chatgpt.com
+- https://www.w3.org
+- https://www.w3schools.com
+- https://github.com/xFuture603/Front-End-Checklist 
 - https://www.webaccessibilitychecklist.com/
 - https://observatory.mozilla.org
 - https://validator.w3.org
@@ -60,4 +35,6 @@ siehe [CHANGELOG.md](https://github.com/olien/base_quality_check/blob/main/CHANG
 - https://www.cookiemetrix.com
 - https://web.dev/?hl=de
 - https://github.com/ozf/frontend-guidelines
-- https://github.com/thedaviddias/Front-End-Performance-Checklist
+
+
+

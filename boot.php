@@ -46,28 +46,18 @@ if (isset($_GET['page']) && is_string($_GET['page']) && preg_match('/base_qualit
 	rex_view::addJsFile($this->getAssetsUrl('bqc.js'));
 
 	rex_extension::register('OUTPUT_FILTER', function (rex_extension_point $ep) {
-		$suchmuster = 'class="rex-page-main';
-		$ersetzen = 'class="bqc-addon rex-page-main';
-		$ep->setSubject(str_replace($suchmuster, $ersetzen, $ep->getSubject()));
+		$ep->setSubject(str_replace('class="rex-page-main', 'class="bqc-addon rex-page-main', $ep->getSubject()));
 	});
 
-	rex_extension::register('OUTPUT_FILTER', function (rex_extension_point $ep) {
-		$suchmuster = '<title>Backend &lt;div id=&quot;backendcount&quot;&gt;&lt;/div&gt;';
-		$ersetzen = '<title>Backend ';
-		$ep->setSubject(str_replace($suchmuster, $ersetzen, $ep->getSubject()));
-	});
+	$replacements = [
+		'<title>Backend &lt;div id=&quot;backendcount&quot;&gt;&lt;/div&gt;' => '<title>Backend ',
+		'<title>Frontend &lt;div id=&quot;frontendcount&quot;&gt;&lt;/div&gt;' => '<title>Frontend ',
+		'<title>Live &lt;div id=&quot;livecount&quot;&gt;&lt;/div&gt;' => '<title>Live ',
+	];
 
-	rex_extension::register('OUTPUT_FILTER', function (rex_extension_point $ep) {
-		$suchmuster = '<title>Frontend &lt;div id=&quot;frontendcount&quot;&gt;&lt;/div&gt;';
-		$ersetzen = '<title>Frontend ';
-		$ep->setSubject(str_replace($suchmuster, $ersetzen, $ep->getSubject()));
+	rex_extension::register('OUTPUT_FILTER', function (rex_extension_point $ep) use ($replacements) {
+		$ep->setSubject(strtr($ep->getSubject(), $replacements));
 	});
-
-	rex_extension::register('OUTPUT_FILTER', function (rex_extension_point $ep) {
-		$suchmuster = '<title>Live &lt;div id=&quot;livedcount&quot;&gt;&lt;/div&gt;';
-		$ersetzen = '<title>Live ';
-		$ep->setSubject(str_replace($suchmuster, $ersetzen, $ep->getSubject()));
-	});	
 
 }
 
@@ -81,6 +71,8 @@ if ($func !== '' && $id !== '') {
 	$sql->setValue('check', $func == 'checktask' ? 1 : 0);
 	$sql->update();
 }
+
+
 
 function updateTaskscounter()
 {
@@ -144,19 +136,21 @@ function updateTaskscounter()
 
 function getColorByPercentage($percentage)
 {
-	if ($percentage > 0 && $percentage < 25) {
-		return '#FF0000';
-	} elseif ($percentage >= 25 && $percentage < 50) {
-		return '#EE4420';
-	} elseif ($percentage >= 50 && $percentage < 75) {
-		return '#DD8850';
-	} elseif ($percentage >= 75 && $percentage < 99) {
-		return '#ACCE40';
+	$color = '#FF0000';
+
+	if ($percentage >= 0 && $percentage < 25) {
+		$color = '#FF0000';
+	} elseif ($percentage < 50) {
+		$color = '#EE4420';
+	} elseif ($percentage < 75) {
+		$color = '#DD8850';
+	} elseif ($percentage < 99) {
+		$color = '#ACCE40';
 	} elseif ($percentage == 100) {
-		return '#49AD50';
-	} else {
-		return '#FF0000';
+		$color = '#49AD50';
 	}
+
+	return $color;
 }
 
 rex_extension::register('PACKAGES_INCLUDED', function () {

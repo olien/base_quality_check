@@ -15,6 +15,40 @@ Einfach möglichst alle Statusicons anklicken und alles grün werden lassen :-))
 - Lizenz: [MIT](https://github.com/olien/base_quality_check/blob/main/LICENSE) 
 - Changelog: [CHANGELOG.md](https://github.com/olien/base_quality_check/blob/main/CHANGELOG.md)
 
+## ToDo / Ideen
+
+-- **Frontend**
+
+- Description
+- Social Media Meta / Facebook, Twitter?, OpenGraph
+- Fav- und Touch Icons
+- Wie wird JS und CSS eigebunden (async, defer, minify)
+- Canonical Tag 
+- Viewport
+- Bilder: Sicherstellen, dass dekorative Bilder das Null-alt (leere) Attribut verwenden.
+- Responsives Verhalten
+- Videos?
+- 404er Seite
+
+-- **Backend**
+
+- humans.txt
+- JSON LD - welche für eine Standard Website?
+
+-- **Live**
+
+- Sind Kunden Accounts eingerichtet?
+- httpheader
+- Linkchecker
+- Test, ob Kontaktlinks (Telefon / E-Mail) funktionieren
+
+
+-- **Neuer Reiter für nützliche Links?**
+
+-- **Neuer Reiter bzw. Kategorie für Inhalte?**
+
+-- **Neuer Reiter bzw. Kategorie für PWA?**
+
 ## Credits
 
 - [Friends Of REDAXO](https://github.com/FriendsOfREDAXO)

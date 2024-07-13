@@ -30,15 +30,17 @@ if ($all_tasks) {
     
             $checked = 'checked';
             $link = '<a class="tasklink" href="' . rex_url::currentBackendPage(['func' => 'unchecktask', 'id' => $task->getId()]) . '" title="Als unerledigt markieren">
-                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#62A959" class="size-6 ">
-                             <path stroke-linecap="round" stroke-linejoin="round" d="M10.125 2.25h-4.5c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125v-9M10.125 2.25h.375a9 9 0 0 1 9 9v.375M10.125 2.25A3.375 3.375 0 0 1 13.5 5.625v1.5c0 .621.504 1.125 1.125 1.125h1.5a3.375 3.375 0 0 1 3.375 3.375M9 15l2.25 2.25L15 12" />
-                         </svg>
+                        <svg  xmlns="http://www.w3.org/2000/svg" class="size-6" viewBox="0 0 24 24" fill="none"  stroke="#62A959" stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round" >
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+                              <path d="M9 12l2 2l4 -4" />
+                        </svg>
+
                      </a>';
         } else {
             $link = '<a class="tasklink" href="' . rex_url::currentBackendPage(['func' => 'checktask', 'id' => $task->getId()]) . '" title="Als erledigt markieren">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="darkgrey" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-                        </svg>
+                        <svg  xmlns="http://www.w3.org/2000/svg" class="size-6" viewBox="0 0 24 24"  fill="none"  stroke="darkgrey"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round" >
+                              <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+                        </svg>                        
                     </a>';
         }
 

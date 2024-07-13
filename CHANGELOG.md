@@ -2,6 +2,11 @@
 Base Qualityy Check - Changelog
 ================================================================================
 
+## Version 1.2.1 - 13.07.2024
+
+- kleinere Änderungen
+- neue Status Icons
+
 ## Version 1.2.0 - 12.07.2024
 
 - Hover und Title Text bei den Status Icons angepasst. Danke an [Norbert](https://github.com/tyrant88)

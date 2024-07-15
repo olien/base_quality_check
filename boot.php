@@ -2,7 +2,7 @@
 
 use FriendsOfRedaxo\BaseQualityCheck\BaseQualityCheckDataset;
 use FriendsOfRedaxo\BaseQualityCheck\BaseQualityCheckGroup;
-use FriendsOfRedaxo\BaseQualityCheck\BaseQualityCheckSubGroup
+use FriendsOfRedaxo\BaseQualityCheck\BaseQualityCheckSubGroup;
 
 /**
  *  @var rex_addon $this

@@ -1,8 +1,9 @@
 <?php 
+namespace FriendsOfRedaxo\BaseQualityCheck;
 
 use rex_yform_manager_dataset;
 
-class base_quality_check_sub_group extends rex_yform_manager_dataset {
+class BaseQualityCheckSubGroup extends rex_yform_manager_dataset {
 	
     /* Untergruppe */
     /** @api */

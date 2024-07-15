@@ -1,23 +1,26 @@
 <?php
 
+use FriendsOfRedaxo\BaseQualityCheck\BaseQualityCheckDataset;
+use FriendsOfRedaxo\BaseQualityCheck\BaseQualityCheckGroup;
+use FriendsOfRedaxo\BaseQualityCheck\BaseQualityCheckSubGroup;
+
 /**
  *  @var rex_addon $this
- */
-
+ */	
 $addon = rex_addon::get('base_quality_check');
 
 if (rex_addon::get('yform')->isAvailable() && !rex::isSafeMode()) {
 	rex_yform_manager_dataset::setModelClass(
 		'rex_base_quality_check',
-		base_quality_check::class,
+		BaseQualityCheckDataset::class,
 	);
 	rex_yform_manager_dataset::setModelClass(
 		'rex_base_quality_check_group',
-		base_quality_check_group::class,
+		BaseQualityCheckQroup::class,
 	);
 	rex_yform_manager_dataset::setModelClass(
 		'rex_base_quality_check_sub_group',
-		base_quality_check_sub_group::class,
+		BaseQualityCheckSubGroup::class,
 	);
 }
 
@@ -76,21 +79,21 @@ if ($func !== '' && $id !== '') {
 
 function updateTaskscounter()
 {
-	$all_tasks = base_quality_check::query()->where('status', 1)->count();
-	$all_tasks_checked = base_quality_check::query()->where('check', 1)->where('status', 1)->count();
+	$all_tasks = BaseQualityCheckDataset::query()->where('status', 1)->count();
+	$all_tasks_checked = BaseQualityCheckDataset::query()->where('check', 1)->where('status', 1)->count();
 	$all_tasks_checked_percentage = intval(round(($all_tasks_checked / $all_tasks) * 100, 0));
 
-	$all_frontend_tasks = base_quality_check::query()->where('group', 1)->where('status', 1)->count();
-	$all_frontend_tasks_checked = base_quality_check::query()->where('group', 1)->where('check', 1)->where('status', 1)->count();
+	$all_frontend_tasks = BaseQualityCheckDataset::query()->where('group', 1)->where('status', 1)->count();
+	$all_frontend_tasks_checked = BaseQualityCheckDataset::query()->where('group', 1)->where('check', 1)->where('status', 1)->count();
 	$frontend_tasks_checked_percentage = intval(round(($all_frontend_tasks_checked / $all_frontend_tasks) * 100, 0));
 
-	$all_backend_tasks = base_quality_check::query()->where('group', 2)->where('status', 1)->count();
-	$all_backend_tasks_checked = base_quality_check::query()->where('group', 2)->where('check', 1)->where('status', 1)->count();
+	$all_backend_tasks = BaseQualityCheckDataset::query()->where('group', 2)->where('status', 1)->count();
+	$all_backend_tasks_checked = BaseQualityCheckDataset::query()->where('group', 2)->where('check', 1)->where('status', 1)->count();
 	$backend_tasks_checked_percentage = intval(round(($all_backend_tasks_checked / $all_backend_tasks) * 100, 0));
 
 
-	$all_live_tasks = base_quality_check::query()->where('group', 3)->where('status', 1)->count();
-	$all_live_tasks_checked = base_quality_check::query()->where('group', 3)->where('check', 1)->where('status', 1)->count();
+	$all_live_tasks = BaseQualityCheckDataset::query()->where('group', 3)->where('status', 1)->count();
+	$all_live_tasks_checked = BaseQualityCheckDataset::query()->where('group', 3)->where('check', 1)->where('status', 1)->count();
 	$live_tasks_checked_percentage = intval(round(($all_live_tasks_checked / $all_live_tasks) * 100, 0));
 
 	$color = getColorByPercentage($all_tasks_checked_percentage);

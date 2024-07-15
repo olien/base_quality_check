@@ -1,5 +1,5 @@
 <?php
-
+use FriendsOfRedaxo\BaseQualityCheck\BaseQualityCheckDataset;
 
 $group      = $this->getVar('group');
 $pagetitle  = $this->getVar('pagetitle');   
@@ -8,7 +8,7 @@ $pagetitle  = $this->getVar('pagetitle');
 $tasks = array();
 $currentSubGroup = '';
 
-$all_tasks = base_quality_check::query()
+$all_tasks = BaseQualityCheckDataset::query()
     ->where('status', 1, "=")
     ->where('group', $group, "=")
     ->orderBy('prio', 'ASC');

@@ -1,5 +1,5 @@
 <?php
-
+use FriendsOfRedaxo\BaseQualityCheck\BaseQualityCheckDataset;
 
 $group      = $this->getVar('group');
 $pagetitle  = $this->getVar('pagetitle');   

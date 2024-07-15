@@ -1,9 +1,10 @@
 <?php 
-
+namespace FriendsOfRedaxo\BaseQualityCheck;
 
 use rex_yform_manager_dataset;
 
-class base_quality_check extends rex_yform_manager_dataset {
+
+class BaseQualityCheckDataset extends rex_yform_manager_dataset {
 	
     /* Status */
     /** @api */

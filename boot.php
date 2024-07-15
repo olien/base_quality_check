@@ -3,21 +3,24 @@
 /**
  *  @var rex_addon $this
  */
+use FriendsOfRedaxo\BaseQualityCheck\BaseQualityCheckDataset;
+use FriendsOfRedaxo\BaseQualityCheck\BaseQualityCheckGroup;
+use FriendsOfRedaxo\BaseQualityCheck\BaseQualityCheckSubGroup
 
 $addon = rex_addon::get('base_quality_check');
 
 if (rex_addon::get('yform')->isAvailable() && !rex::isSafeMode()) {
 	rex_yform_manager_dataset::setModelClass(
 		'rex_base_quality_check',
-		base_quality_check::class,
+		BaseQualityCheckDataset::class,
 	);
 	rex_yform_manager_dataset::setModelClass(
 		'rex_base_quality_check_group',
-		base_quality_check_group::class,
+		BaseQualityCheckQroup::class,
 	);
 	rex_yform_manager_dataset::setModelClass(
 		'rex_base_quality_check_sub_group',
-		base_quality_check_sub_group::class,
+		BaseQualityCheckSubGroup::class,
 	);
 }
 

@@ -79,7 +79,7 @@ if ($func !== '' && $id !== '') {
 
 function updateTaskscounter()
 {
-	$all_tasks = base_quality_check::query()->where('status', 1)->count();
+	$all_tasks = BaseQualityCheckDataset::query()->where('status', 1)->count();
 	$all_tasks_checked = BaseQualityCheckDataset::query()->where('check', 1)->where('status', 1)->count();
 	$all_tasks_checked_percentage = intval(round(($all_tasks_checked / $all_tasks) * 100, 0));
 

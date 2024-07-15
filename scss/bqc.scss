@@ -54,15 +54,19 @@
     }
 }
 
+
 .bqc-addon .panel-collapse {
+    margin: 8px;
+    padding: 8px 8px 8px 10px!important;    
+    background: #DFE3E9;
+}
+
+ .rex-theme-dark .bqc-addon .panel-collapse {
     margin: 8px;
     padding: 8px 8px 8px 10px!important;
     background: #222B34;
 }
 
-.rex-theme-light .panel-collapse {
-    background: #DFE3E9;
-}
 
 .tasklink:hover svg {
     stroke: #62A959 !important;

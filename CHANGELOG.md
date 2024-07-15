@@ -1,7 +1,11 @@
 
-Base Qualityy Check - Changelog
+Base Quality Check - Changelog
 ================================================================================
 
+## Version 1.3.0 - 15.07.2024
+
+- Nutzung von Namespaces.  Danke an [skerbis](https://github.com/skerbis)
+- Anpassung Light Mode
 
 ## Version 1.2.3 - 15.07.2024
 

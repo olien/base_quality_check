@@ -24,6 +24,7 @@ Einfach möglichst alle Statusicons anklicken und alles grün werden lassen :-))
 -- **Live**
 
 - httpheader
+- no Index / no follow prüfen 
 
 
 -- **Neuer Reiter für Best Practice?**

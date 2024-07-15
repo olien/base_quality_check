@@ -2,6 +2,11 @@
 Base Qualityy Check - Changelog
 ================================================================================
 
+
+## Version 1.2.2 - 13.07.2024
+
+- weitere Checks
+
 ## Version 1.2.1 - 13.07.2024
 
 - kleinere Änderungen

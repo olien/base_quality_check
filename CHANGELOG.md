@@ -3,7 +3,12 @@ Base Qualityy Check - Changelog
 ================================================================================
 
 
-## Version 1.2.2 - 13.07.2024
+## Version 1.2.3 - 15.07.2024
+
+- weitere Checks
+- Vorbereitung für den Umzug zu FOR
+
+## Version 1.2.2 - 15.07.2024
 
 - weitere Checks
 

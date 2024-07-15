@@ -9,22 +9,14 @@ Je nach Wissenstand des Entwicklers, Budget des Projektes oder dessen Anforderun
 Einfach möglichst alle Statusicons anklicken und alles grün werden lassen :-))
 
 
-## Autor, Lizenz und Changelog
-
-- Autor: [Oliver Kreischer](https://github.com/olien), [getaweb GmbH](https://github.com/getaweb) 
-- Lizenz: [MIT](https://github.com/olien/base_quality_check/blob/main/LICENSE) 
-- Changelog: [CHANGELOG.md](https://github.com/olien/base_quality_check/blob/main/CHANGELOG.md)
-
 ## ToDo / Ideen
 
 -- **Frontend**
 
-- Social Media Meta / Facebook, Twitter?, OpenGraph
 - Fav- und Touch Icons
 - Wie wird JS und CSS eigebunden (async, defer, minify)
-- Canonical Tag 
-- Downloads
-- Videos?
+- Downloads?
+- Videos
 - JSON LD - welche für eine Standard Website?
 
 -- **Backend**
@@ -33,6 +25,9 @@ Einfach möglichst alle Statusicons anklicken und alles grün werden lassen :-))
 
 - httpheader
 
+
+-- **Neuer Reiter für Best Practice?**
+
 -- **Neuer Reiter für nützliche Links?**
 
 -- **Neuer Reiter bzw. Kategorie für Inhalte?**
@@ -40,10 +35,16 @@ Einfach möglichst alle Statusicons anklicken und alles grün werden lassen :-))
 -- **Neuer Reiter bzw. Kategorie für PWA?**
 
 
-## Credits
+## Autor
 
-- [Friends Of REDAXO](https://github.com/FriendsOfREDAXO)
-- [REDAXO CMS](https://redaxo.org)
+**Friends Of REDAXO**
+
+* http://www.redaxo.org
+* https://github.com/FriendsOfREDAXO
+
+**Projektleitung**
+
+[Oliver Kreischer](https://github.com/olien)
 
 
 ## Quellen und weitere hilfreiche Links

@@ -1,12 +1,12 @@
 <?php
 
-/**
- *  @var rex_addon $this
- */
 use FriendsOfRedaxo\BaseQualityCheck\BaseQualityCheckDataset;
 use FriendsOfRedaxo\BaseQualityCheck\BaseQualityCheckGroup;
 use FriendsOfRedaxo\BaseQualityCheck\BaseQualityCheckSubGroup
 
+/**
+ *  @var rex_addon $this
+ */	
 $addon = rex_addon::get('base_quality_check');
 
 if (rex_addon::get('yform')->isAvailable() && !rex::isSafeMode()) {

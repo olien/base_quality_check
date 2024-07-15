@@ -80,20 +80,20 @@ if ($func !== '' && $id !== '') {
 function updateTaskscounter()
 {
 	$all_tasks = base_quality_check::query()->where('status', 1)->count();
-	$all_tasks_checked = base_quality_check::query()->where('check', 1)->where('status', 1)->count();
+	$all_tasks_checked = BaseQualityCheckDataset::query()->where('check', 1)->where('status', 1)->count();
 	$all_tasks_checked_percentage = intval(round(($all_tasks_checked / $all_tasks) * 100, 0));
 
-	$all_frontend_tasks = base_quality_check::query()->where('group', 1)->where('status', 1)->count();
-	$all_frontend_tasks_checked = base_quality_check::query()->where('group', 1)->where('check', 1)->where('status', 1)->count();
+	$all_frontend_tasks = BaseQualityCheckDataset::query()->where('group', 1)->where('status', 1)->count();
+	$all_frontend_tasks_checked = BaseQualityCheckDataset::query()->where('group', 1)->where('check', 1)->where('status', 1)->count();
 	$frontend_tasks_checked_percentage = intval(round(($all_frontend_tasks_checked / $all_frontend_tasks) * 100, 0));
 
-	$all_backend_tasks = base_quality_check::query()->where('group', 2)->where('status', 1)->count();
-	$all_backend_tasks_checked = base_quality_check::query()->where('group', 2)->where('check', 1)->where('status', 1)->count();
+	$all_backend_tasks = BaseQualityCheckDataset::query()->where('group', 2)->where('status', 1)->count();
+	$all_backend_tasks_checked = BaseQualityCheckDataset::query()->where('group', 2)->where('check', 1)->where('status', 1)->count();
 	$backend_tasks_checked_percentage = intval(round(($all_backend_tasks_checked / $all_backend_tasks) * 100, 0));
 
 
-	$all_live_tasks = base_quality_check::query()->where('group', 3)->where('status', 1)->count();
-	$all_live_tasks_checked = base_quality_check::query()->where('group', 3)->where('check', 1)->where('status', 1)->count();
+	$all_live_tasks = BaseQualityCheckDataset::query()->where('group', 3)->where('status', 1)->count();
+	$all_live_tasks_checked = BaseQualityCheckDataset::query()->where('group', 3)->where('check', 1)->where('status', 1)->count();
 	$live_tasks_checked_percentage = intval(round(($all_live_tasks_checked / $all_live_tasks) * 100, 0));
 
 	$color = getColorByPercentage($all_tasks_checked_percentage);
